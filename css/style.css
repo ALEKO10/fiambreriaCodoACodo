@@ -1,0 +1,107 @@
+/* Estilos para el encabezado */
+
+body {
+    background-color: brown;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    padding-right: 30px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+  
+ .formulario {
+  display: grid;
+  gap: 20px;
+ }
+
+ nav {
+    background-color: #333; /* Cambia el color de fondo según tu preferencia */
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    text-align: center; /* Centra los elementos en el nav */
+}
+
+nav a {
+    color: #fff; /* Cambia el color del texto según tu preferencia */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 10px; /* Ajusta el margen entre los enlaces */
+    padding: 5px 10px; /* Ajusta el relleno de los enlaces */
+    border-radius: 5px; /* Agrega bordes redondeados a los enlaces */
+}
+
+nav a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse sobre los enlaces */
+}
