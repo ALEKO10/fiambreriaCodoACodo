@@ -595,9 +595,12 @@ footer{
     height: auto;
     object-fit:cover;
     border-radius: 10px;
+<<<<<<< HEAD
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
+=======
+>>>>>>> 44cefad8180f556ab4c91da935b78c4f1ae6383d
 
     
 }
