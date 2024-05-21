@@ -565,6 +565,7 @@ footer{
     color: var(--main-color);
     margin-bottom: 4rem;
     font-size: 2rem;
+    padding-top:2rem;
 }
 
 .nosotros .row {
