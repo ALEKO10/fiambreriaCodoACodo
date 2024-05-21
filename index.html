@@ -19,25 +19,45 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <nav>
-            <a href="/">inicio</a>
-            <a href="./contacto.html">Contacto</a>
-            <!-- logo -->
-            <div>
-                <a href="/">La-Quinta-Fiambreria</a>
-            </div>
-            <!-- hipervínculo del menú -->
+        <div class="logo">
+            <img src="./static/img/imagen001.jpg" alt="">
+            <p class="title">Fiambrería Codo a Codo</p>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="botonera">
             <ul>
-                <li><a href="#Popular">Nuestras Marcas</a></li>
-                <li><a href="./contacto.html">Registrarse</a></li>
-                <li><a href="#">iniciar Sesión</a></li>
-
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#shop">Productos</a></li>
+                <li><a href="#Ofertas">Ofertas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
+
     </header>
 
     <!-- contenido -->
     <main>
+        <section class="nosotros" id="nosotros">
+            <h1 class="heading_Nosotros">Nosotros</h1>
+            <div class="row">
+                <div class="content">
+                    <h3>Nuestra misión</h3>
+                    <p>Liderar el mercado de venta de fiambres, quesos y complementos y proyectarnos en todo CABA y GBA como la empresa preferida en el segmento por la excelente relación precio-calidad y por la calidez en la atención; ser un gran lugar para trabajar donde las personas se sientan motivadas a hacer las cosas bien; ser un gran lugar para invertir donde la red de contención a socios-franquiciados sea un valor común y duradero.</p>
+                    <a href="" class="btn-nosotros">Leer mas</a>
+                </div>
+                <div class="image-nosotros">
+                    <img src="./static/img/Nosotros.jpg" alt="">
+
+                </div>
+            </div>
+
+
+        </section>
 
         <section class="shop" id="shop">
             <div class="heading">

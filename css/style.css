@@ -1,6 +1,6 @@
 /* Estilos para el encabezado */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Rubik+Beastly&display=swap');
 
 
 *{
@@ -25,6 +25,122 @@
     
 
 }
+
+
+
+header {
+    background-color: #a52a2a;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1111;
+}
+.header_contacto {
+    background-color: var(--fifth-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.title {
+    font-size: 24px;
+    font-family: fantasy;
+    color: white;
+    margin-left: 10px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#botonera {
+    display: flex;
+}
+
+#botonera ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#botonera ul li {
+    margin-left: 20px;
+}
+
+#botonera ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+@media all and (max-width: 768px) {
+    .title {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    #botonera {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #a52a2a;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    #botonera ul {
+        flex-direction: column;
+    }
+
+    #botonera ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #botonera ul li a {
+        padding: 10px;
+    }
+
+    #menu-toggle:checked + .menu-icon + #botonera {
+        display: flex;
+    }
+}
+
+
+
+
 
 
 .fondoContacto{
@@ -173,7 +289,13 @@ nav a:hover {
 .shop p {
     color:var(--third-color);
 }
+.shop .heading p{
+    font-size: 1.2rem;
+    color: var(--third-color);
+    padding: 2rem 0;
+    line-height: 1.5;
 
+}
 .heading {
     text-align: center;
 
@@ -394,4 +516,116 @@ footer{
             
         }
     }
+}
+
+/* Nosotros */
+
+/* .nosotros {
+    background-color: var(--third-color);
+    padding-bottom: 2rem;
+}
+
+.heading_Nosotros{
+    text-align: center;
+    color: var(--main-color);
+    
+    margin-bottom:4rem;
+
+    font-size:2rem;
+
+}
+.nosotros .row{
+    display:flex;
+     flex:wrap; 
+    align-items: center;
+    gap:2rem;
+    max-width: 80%;
+    margin:0 auto;
+ 
+}
+
+.nosotros .row .content h3{
+    font-size:2rem;
+    color:var(--main-color);
+    /* text-transform:uppercase; 
+}
+
+.nosotros .row .image-nosotros {
+    flex: 1 1 40rem;
+
+}
+*/
+.nosotros {
+    background-color: var(--third-color);
+    padding-bottom: 2rem;
+}
+
+.heading_Nosotros {
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.nosotros .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+ 
+}  
+
+.nosotros .row .content h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+
+
+.nosotros .row .content p {
+    font-size: 1.2rem;
+    color: var(--fifth-color);
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+.nosotros .row .image-nosotros img {
+    max-width: 100%;
+    height: auto;
+    object-fit:cover;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+
+
+.btn-nosotros {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; 
+}
+
+.btn-nosotros:hover {
+    background-color: var(--fourth-color);
+  
+}
+
+@media (max-width: 992px) {
+    .nosotros .row {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros .row .image-nosotros,
+    .nosotros .row .content {
+        justify-self: stretch;
+    }
+  
 }
