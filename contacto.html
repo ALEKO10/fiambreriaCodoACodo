@@ -7,18 +7,18 @@
     <link rel="icon" href="./static/img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="./css/style.css"
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="fondoContacto">
     <header></header>
     <nav>
         <a href="/">inicio</a>
         <a href="./contacto.html">Contacto</a>
     </nav>
-    <main>
+    <main  >
         <!-- Formulario de contacto -->
         <h1>Registro</h1>
-        <form action=""class="formulario" id="formulario">
+        <form action=""class="formulario" id="formulario" onsubmit="return validarFormulario()">
             <fieldset>
                 <legend>Datos Personales</legend>
 
@@ -90,7 +90,43 @@
         </form>
 
     </main>
-    <footer></footer>
+  
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Nosotros</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footerBottom">
+            <a href="">Términos y condiciones</a>
+            <a href="">Preguntas Frecuentes</a>
+            <a href="">Ayuda</a>
+
+        </div>
+    </footer>
+
+    <!-- Footer o Pie -->
+    <!-- <footer>
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Ayuda</a>
+    </footer> -->
+    <script src="https://kit.fontawesome.com/95f69c18e0.js" crossorigin="anonymous"></script>
+
         <script src="./js/formulario.js"></script>
 </body>
 </html>
